@@ -8,7 +8,6 @@ const createFlashcardsButton = "//button/span[text()='Create flashcards']";
 const flashcardQuestion = "(//div[@contenteditable='true'])[1]";
 const flashcardAnswer = "(//div[@contenteditable='true'])[2]";
 const flashcardCreate = "(//button[@id='flashcard-create'])[1]";
-// const studySetMoreOptions = "(//div[@class='more-icon ng-star-inserted'])[1]";
 const studySet = "//div[text()=' :studySetName ']";
 const studySetMoreOptions = "//div[text()=' :studySetName ']/following-sibling::div//div[@class='more-icon ng-star-inserted']";
 const studySetDeleteButton = "//button[text()=' Delete ']";
@@ -17,13 +16,13 @@ const promptYesButton = "//button[text()=' Yes ']";
 const noStudySetMessage = "You don't have any Study Sets yet. Find existing Study Sets or create a new one to get started.";
 const flashcardQandA = [
   {
-    question: '2+2', answer:'4'
+    question: '2 + 2', answer:'4'
   },
   {
     question: 'Color of blood?', answer:'Red'
   },
   {
-    question: 'speed of light?', answer:'299,792,458 m/s'
+    question: 'Speed of light?', answer:'299,792,458 m/s'
   },
   {
     question: 'Capital of Kenya', answer:'Nairobi'
@@ -34,6 +33,7 @@ const flashcardQandA = [
 ]
 export let studySetName;
 
+// Creates a study set
 export function createStudySet() {
   cy.visit('/studysets');
   cy.xpath(createStudySetButton).click()
@@ -42,6 +42,7 @@ export function createStudySet() {
   cy.xpath(createSetButton).click();
 }
 
+// Creates flash cards
 export function createFlashcards(count) {
   cy.xpath(flashcardsTab).click();
   cy.xpath(createFlashcardsButton).click();
@@ -54,6 +55,7 @@ export function createFlashcards(count) {
   }
 }
 
+// Deletes a study set. based on the given name
 export function deleteStudySet(studySetName) {
   cy.visit('/studysets');
   cy.xpath(studySetMoreOptions.replace(':studySetName', studySetName)).click();
