@@ -1,27 +1,17 @@
-[![PR](https://github.com/messagebird-dev/e2e-api-tests/actions/workflows/pr.yml/badge.svg)](https://github.com/messagebird-dev/e2e-api-tests/actions/workflows/pr.yml)
-
-# E2E API Tests
+# StudySmarter case study for QA lead role
 
 ## Installation
 
-1. Copy the `.env.example` and rename to `.env`
-2. Grab your `$NEST_API$_token` and set the `BEARER_TOKEN` value.
-3. Run `npm install`
+Run `npm install`
 
-### Execute all tests
+### Execute API testes
 
 ```
-npm run tests
+npm run api-test
 ```
 
-### Execute specific test
+### Execute UI tests
 
 ```
-npm run test <path-to-test-file>
-```
-
-i.e:
-
-```
-npm run tests tests/accounts/accounts.js
+npm run ui-test
 ```

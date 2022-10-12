@@ -6,7 +6,8 @@
     "node": "^16.14.0"
   },
   "scripts": {
-    "test": "jest --maxWorkers=50%"
+    "api-test": "jest --maxWorkers=50%",
+    "ui-test": "./node_modules/.bin/cypress run --browser chrome --headed"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -41,6 +42,7 @@
   },
   "dependencies": {
     "cypress": "^10.10.0",
+    "cypress-xpath": "^2.0.1",
     "randomstring": "^1.2.2"
   }
 }
