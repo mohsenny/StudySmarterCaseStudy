@@ -22,5 +22,5 @@ npm run ui-test
 
 <img width="737" alt="Screenshot 2022-10-12 at 18 57 38" src="https://user-images.githubusercontent.com/1129811/195403688-2c62209a-48d3-4288-8f5a-a5d6494067a4.png">
 
+<img src="https://user-images.githubusercontent.com/1129811/195403623-37f31226-f2a2-4362-890d-e672ebce9c96.gif" width="1200" />
 
-![ssssss_AdobeExpress](https://user-images.githubusercontent.com/1129811/195403623-37f31226-f2a2-4362-890d-e672ebce9c96.gif)
