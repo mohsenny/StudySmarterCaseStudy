@@ -6,7 +6,7 @@
 npm install
 ```
 
-### Execute API testes
+### Execute API tests
 
 ```
 npm run api-test
